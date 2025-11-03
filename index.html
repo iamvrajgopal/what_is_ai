@@ -3,186 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What is AI? - A Beginner's Guide</title>
-    <!-- Load Tailwind CSS -->
+    <title>AI Education Hub: Resources for Middle & Secondary School</title>
+    <!-- Load Tailwind CSS for modern styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Use Inter font family -->
+    <!-- Use Inter font family and define a custom color scheme -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        :root {
+            --color-primary: #1e3a8a; /* Dark Blue */
+            --color-secondary: #3b82f6; /* Medium Blue */
+            --color-accent: #fcd34d; /* Yellow/Gold Accent */
+        }
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f7f9fc;
+            background-color: #f8fafc; /* Light Gray/Blue background */
         }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased text-gray-800">
 
     <!-- Header & Navigation -->
-    <header class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-extrabold text-indigo-700 tracking-tight">
-                <span class="text-gray-900">AI</span> Essentials
+    <header class="bg-white shadow-xl sticky top-0 z-50 border-t-4 border-blue-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-blue-800 tracking-tight">
+                AI Education Resource Hub
             </h1>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">What is AI?</a>
-                <a href="#learn" class="text-gray-600 hover:text-indigo-600 transition duration-300">Learn More</a>
-                <a href="#quiz" class="text-gray-600 hover:text-indigo-600 transition duration-300">Knowledge Check</a>
-                <a href="#download" class="text-gray-600 hover:text-indigo-600 transition duration-300">Resources</a>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#presentation" class="text-gray-600 hover:text-blue-700 font-medium transition duration-300">Presentation</a>
+                <a href="#videos" class="text-gray-600 hover:text-blue-700 font-medium transition duration-300">Videos</a>
+                <a href="#assessment" class="text-gray-600 hover:text-blue-700 font-medium transition duration-300">Assessment</a>
+                <a href="#deep-dive" class="text-gray-600 hover:text-blue-700 font-medium transition duration-300">Deep Dive</a>
             </nav>
+            <!-- Mobile Menu Placeholder -->
+            <button class="md:hidden p-2 text-gray-600 hover:text-blue-700 rounded-lg">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
         </div>
     </header>
 
     <!-- Main Content Container -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
         <!-- Hero Section -->
-        <section id="hero" class="text-center mb-20 p-8 bg-indigo-50 rounded-xl shadow-inner">
-            <h2 class="text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
-                What is Artificial Intelligence?
+        <section id="hero" class="text-center mb-16 p-10 bg-blue-50 rounded-2xl shadow-2xl border-b-4 border-blue-500">
+            <p class="text-sm font-semibold uppercase text-blue-600 mb-2 tracking-widest">
+                Middle & Secondary School Curriculum
+            </p>
+            <h2 class="text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+                Teaching "What is Artificial Intelligence?"
             </h2>
-            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-                A student-friendly resource to explore the core concepts of AI and Machine Learning.
+            <p class="text-xl text-gray-600 max-w-4xl mx-auto mb-8">
+                A curated hub of professional, ready-to-use resources for educators to introduce AI, Machine Learning, and Data Concepts in the classroom.
             </p>
-            <!-- Call to Action for Gamma Presentation Download (UPDATED LINK) -->
-            <a href="https://gamma.app/docs/What-is-Artificial-Intelligence-6no87prsp4a9rel" target="_blank" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-xl text-white bg-indigo-600 hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                View Presentation on Gamma
-            </a>
-            <p class="mt-4 text-sm text-gray-500 italic">Click the link above to view or download the presentation file.</p>
-        </section>
-
-        <!-- What is AI? Section (SIMPLIFIED CONTENT WITH PROPER BOLDING) -->
-        <section id="about" class="mb-20">
-            <div class="bg-white p-10 rounded-xl shadow-2xl">
-                <h3 class="text-4xl font-bold text-gray-800 mb-6 border-b-2 border-indigo-200 pb-2">What is AI?</h3>
-                <div class="grid md:grid-cols-2 gap-8 text-gray-700">
-                    <div>
-                        <h4 class="text-2xl font-semibold text-indigo-600 mb-3">Artificial Intelligence (AI)</h4>
-                        <p class="mb-4 text-lg leading-relaxed">
-                            <strong>Artificial Intelligence (AI)</strong> is all about making computers <strong>think like people!</strong> It's a big part of computer science where we teach machines to do smart things that usually need a human brain.
-                        </p>
-                        <p class="mb-4 text-lg leading-relaxed">
-                            This includes things like <strong>learning</strong> new facts, <strong>solving puzzles</strong>, <strong>understanding your voice</strong>, and even <strong>seeing</strong> things (like your phone's face lock). The main goal is for computers to work smart and on their own. Things you use every day, like <strong>Siri, Alexa, or even a self-driving car,</strong> all use AI!
-                        </p>
-                    </div>
-                    <div>
-                        <h4 class="text-2xl font-semibold text-indigo-600 mb-3">Machine Learning (ML)</h4>
-                        <p class="mb-4 text-lg leading-relaxed">
-                            <strong>Machine Learning (ML)</strong> is the main way we teach AI to be smart. Think of it like teaching a puppy! Instead of giving the computer a huge list of rules, we give it <strong>tons of examples (data)</strong>.
-                        </p>
-                        <p class="mb-4 text-lg leading-relaxed">
-                            The computer then studies this data, finds <strong>patterns</strong> all by itself, and gets better at making predictions over time. For example, ML learns what a dog looks like by seeing thousands of pictures of dogs, not by being told exactly where the ears and tail are. ML is the engine that helps AI improve every single day!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Video Learning Section -->
-        <section id="learn" class="mb-20">
-            <h3 class="text-4xl font-bold text-gray-800 mb-8 text-center">Video Learning Resources</h3>
-            <p class="text-center text-lg text-gray-600 mb-10">
-                Explore these curated YouTube videos to deepen your understanding of AI and ML concepts.
-            </p>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Video 1: What is AI? -->
-                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
-                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/ttIOdAdQaUE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">What is Artificial Intelligence? | Dr Binocs Show</h4>
-                        <p class="text-sm text-gray-500 mb-4">Channel: Peekaboo Kidz</p>
-                        <a href="https://youtu.be/ttIOdAdQaUE" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
-                            Watch on YouTube
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Video 2: What is ML? -->
-                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
-                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/f_uwKZIAeM0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">What is Machine Learning?</h4>
-                        <p class="text-sm text-gray-500 mb-4">Channel: OxfordSparks</p>
-                        <a href="https://youtu.be/f_uwKZIAeM0" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
-                            Watch on YouTube
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Video 3: AI Ethics -->
-                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
-                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/6yDr7CWLJ8c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-2">AI Ethics | Ethics Defined</h4>
-                        <p class="text-sm text-gray-500 mb-4">Channel: McCombs School of Business</p>
-                        <a href="https://youtu.be/6yDr7CWLJ8c" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
-                            Watch on YouTube
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Knowledge Check / Quiz Section -->
-        <section id="quiz" class="mb-20">
-            <div class="bg-indigo-100 p-10 rounded-xl shadow-2xl flex flex-col md:flex-row items-center gap-8">
-                <div class="md:w-1/2">
-                    <img src="https://placehold.co/600x400/818CF8/FFFFFF?text=Knowledge+Check" onerror="this.onerror=null; this.src='https://placehold.co/600x400/818CF8/FFFFFF?text=Knowledge+Check';" alt="Placeholder image of a test or quiz" class="rounded-lg shadow-lg w-full h-auto">
-                </div>
-                <div class="md:w-1/2">
-                    <h3 class="text-4xl font-bold text-gray-800 mb-4">Test Your Knowledge</h3>
-                    <p class="text-lg text-gray-700 mb-6">
-                        Ready to see how much you've learned? We've prepared a simple set of questions to check your understanding of AI and ML fundamentals.
-                    </p>
-                    <!-- Link to Google Doc Questionnaire -->
-                    <a href="https://docs.google.com/document/d/1vX8cxq6ZIZYZlbMJtcjvGGnZRJXVNyJILliuuk4N2Is/edit?usp=sharing" target="_blank" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-green-600 hover:bg-green-700 transition duration-300 transform hover:scale-105 shadow-md">
-                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
-                        Open Quiz Questions
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Additional Resources Section (Updated with Links) -->
-        <section id="download" class="mb-20 pt-8 border-t border-gray-300">
-            <h3 class="text-4xl font-bold text-gray-800 mb-8 text-center">Additional Resources</h3>
             
-            <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <!-- Link 1: Dirty Data -->
-                <div class="p-6 bg-white rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
-                    <h4 class="text-xl font-semibold text-indigo-600 mb-3">Understanding Dirty Data</h4>
-                    <p class="text-gray-700 mb-4">Learn about incomplete, incorrect, or inaccurate data and why cleaning it is essential for AI systems to work correctly.</p>
-                    <a href="https://www.canva.com/design/DAG3gqFeK6Q/duPLlSB-s5SIawiocVfwpw/edit?utm_content=DAG3gqFeK6Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="inline-flex items-center text-green-600 hover:text-green-800 font-medium">
-                        View Presentation
-                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- Primary Call to Action -->
+            <a href="#presentation" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-semibold rounded-full shadow-lg text-white bg-blue-700 hover:bg-blue-800 transition duration-300 transform hover:scale-[1.02]">
+                Start with the Presentation
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1v-3.25M7 11h10a5 5 0 015 5v3a2 2 0 01-2 2H4a2 2 0 01-2-2v-3a5 5 0 015-5z"></path></svg>
+            </a>
+        </section>
+
+        <!-- Resource Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- 1. Presentation Link -->
+            <section id="presentation" class="col-span-full md:col-span-1">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500 h-full">
+                    <div class="flex items-center mb-4">
+                        <!-- Presentation Icon -->
+                        <svg class="w-8 h-8 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        <h3 class="text-2xl font-bold text-gray-800">Core Presentation</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        A full-length presentation on the fundamentals of Artificial Intelligence, generated in Gamma.
+                    </p>
+                    <a href="https://gamma.app/docs/What-is-Artificial-Intelligence-6no87prsp4a9rel" target="_blank" class="w-full inline-flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition duration-300">
+                        View "What is AI?" Presentation
                     </a>
                 </div>
+            </section>
 
-                <!-- Link 2: Data Ethics -->
-                <div class="p-6 bg-white rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
-                    <h4 class="text-xl font-semibold text-indigo-600 mb-3">Understanding Data Ethics</h4>
-                    <p class="text-gray-700 mb-4">Explore the important rules and fairness principles that guide how we should use data and develop AI responsibly.</p>
-                    <a href="https://www.canva.com/design/DAG3g-Pm-Zg/644k0yaHqNCPBDS1Ke69tg/edit?utm_content=DAG3g-Pm-Zg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="inline-flex items-center text-green-600 hover:text-green-800 font-medium">
-                        View Presentation
-                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- 2. Student Assessment Quiz Link -->
+            <section id="assessment" class="col-span-full md:col-span-1">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-yellow-500 h-full">
+                    <div class="flex items-center mb-4">
+                        <!-- Quiz Icon -->
+                        <svg class="w-8 h-8 text-yellow-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                        <h3 class="text-2xl font-bold text-gray-800">Student Assessment</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        A document with questions to check students' understanding of the core topic, presented in a clean, readable format.
+                    </p>
+                    <a href="https://docs.google.com/document/d/1vX8cxq6ZIZYZlbMJtcjvGGnZRJXVNyJILliuuk4N2Is/edit?usp=sharing" target="_blank" class="w-full inline-flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-yellow-600 hover:bg-yellow-700 transition duration-300">
+                        Open Quiz/Worksheet
                     </a>
                 </div>
-            </div>
+            </section>
 
-            <p class="text-center text-gray-500 mt-8">
-                Created as an educational resource. Please connect with the author for questions or collaborations.
+            <!-- 3. Related Deep Dive Topics -->
+            <section id="deep-dive" class="col-span-full lg:col-span-1">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-500 h-full">
+                    <div class="flex items-center mb-4">
+                        <!-- Data Ethics Icon -->
+                        <svg class="w-8 h-8 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"></path></svg>
+                        <h3 class="2xl font-bold text-gray-800">Deep Dive: Data</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Essential supplementary topics that are crucial for a foundational understanding of AI systems.
+                    </p>
+                    <div class="space-y-3">
+                        <a href="https://www.canva.com/design/DAG3gqFeK6Q/duPLlSB-s5SIawiocVfwpw/edit?utm_content=DAG3gqFeK6Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="block text-blue-600 hover:text-blue-800 bg-gray-50 p-3 rounded-lg flex items-center justify-between transition duration-150">
+                            Understanding Dirty Data
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                        <a href="https://www.canva.com/design/DAG3g-Pm-Zg/644k0yaHqNCPBDS1Ke69tg/edit?utm_content=DAG3g-Pm-Zg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="block text-blue-600 hover:text-blue-800 bg-gray-50 p-3 rounded-lg flex items-center justify-between transition duration-150">
+                            Understanding Data Ethics
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 4. Explainer Videos Section -->
+        <section id="videos" class="mt-16 pt-8 border-t border-gray-200">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <svg class="w-7 h-7 text-red-600 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.615 3.19c-.646-.64-1.464-.962-2.39-.962H6.775c-.926 0-1.744.322-2.39.962C3.744 3.83 3.42 4.648 3.42 5.575v12.85c0 .927.324 1.745.965 2.39.646.64 1.464.962 2.39.962h10.45c.926 0 1.744-.322 2.39-.962.64-.645.962-1.463.962-2.39V5.575c0-.927-.322-1.745-.962-2.39zM12 16.5V7.5l5.5 4.5L12 16.5z"></path></svg>
+                Explainer Videos (YouTube)
+            </h3>
+            <p class="text-lg text-gray-600 mb-8">
+                Visual resources to support your lecture and clarify core concepts like AI, Machine Learning, and Neural Networks.
             </p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <!-- Video 1: What is Artificial Intelligence? (Confirmed Title) -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:shadow-xl transition duration-300">
+                    <a href="https://youtu.be/ttIOdAdQaUE" target="_blank" class="block">
+                        <img src="https://placehold.co/600x338/EF4444/FFFFFF?text=Video+1+Placeholder" onerror="this.onerror=null; this.src='https://placehold.co/600x338/EF4444/FFFFFF?text=Video+1+Placeholder';" alt="YouTube Video Thumbnail Placeholder" class="w-full h-auto object-cover">
+                    </a>
+                    <div class="p-4">
+                        <p class="text-lg font-semibold text-gray-800 mb-2">What is Artificial Intelligence?</p>
+                        <a href="https://youtu.be/ttIOdAdQaUE" target="_blank" class="text-sm text-red-600 hover:text-red-800 font-medium flex items-center">
+                            Watch Video on YouTube
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video 2: What is Machine Learning? (Confirmed Title) -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:shadow-xl transition duration-300">
+                    <a href="https://youtu.be/f_uwKZIAeM0" target="_blank" class="block">
+                        <img src="https://placehold.co/600x338/EF4444/FFFFFF?text=Video+2+Placeholder" onerror="this.onerror=null; this.src='https://placehold.co/600x338/EF4444/FFFFFF?text=Video+2+Placeholder';" alt="YouTube Video Thumbnail Placeholder" class="w-full h-auto object-cover">
+                    </a>
+                    <div class="p-4">
+                        <p class="text-lg font-semibold text-gray-800 mb-2">What is Machine Learning?</p>
+                        <a href="https://youtu.be/f_uwKZIAeM0" target="_blank" class="text-sm text-red-600 hover:text-red-800 font-medium flex items-center">
+                            Watch Video on YouTube
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Video 3: Explaining Neural Networks (Original Descriptive Title Kept) -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:shadow-xl transition duration-300">
+                    <a href="https://youtu.be/6yDr7CWLJ8c" target="_blank" class="block">
+                        <img src="https://placehold.co/600x338/EF4444/FFFFFF?text=Video+3+Placeholder" onerror="this.onerror=null; this.src='https://placehold.co/600x338/EF4444/FFFFFF?text=Video+3+Placeholder';" alt="YouTube Video Thumbnail Placeholder" class="w-full h-auto object-cover">
+                    </a>
+                    <div class="p-4">
+                        <p class="text-lg font-semibold text-gray-800 mb-2">Explaining Neural Networks</p>
+                        <a href="https://youtu.be/6yDr7CWLJ8c" target="_blank" class="text-sm text-red-600 hover:text-red-800 font-medium flex items-center">
+                            Watch Video on YouTube
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
         </section>
 
     </main>
 
-    <!-- Footer (UPDATED FOOTER) -->
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white p-6 mt-12">
-        <div class="max-w-7xl mx-auto text-center">
-            <p>&copy; 2024 AI Essentials. Developed by Rajgopal.</p>
+        <div class="max-w-6xl mx-auto text-center text-sm">
+            <p>&copy; 2025 AI Education Hub. All Resources for Educational Use developed by rajgopal v.</p>
+            <p class="mt-1 text-gray-400">Website designed for easy deployment on platforms like GitHub Pages.</p>
         </div>
     </footer>
 </body>
